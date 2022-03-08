@@ -1,0 +1,82 @@
+:root {
+    /* violet */
+    --primary-color: 111, 76, 255;
+    
+    /* white */
+    --text-color: 256, 256, 256;
+    --bg-image: url('https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+  }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #1D1E22;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px 32px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+  }
+  
+  .btn:hover {
+    transition: all 0.3s ease;
+  }
+  
+  
+  .btn-gradient-border {
+    color: rgba(var(--text-color));
+    border: 2px double transparent;
+        background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .card {
+    margin: 1rem;
+    padding:2rem;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .flex-container {
+      grid-template-columns: repeat(3, auto);
+      display: grid;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+
+  .container {
+    text-align: left;
+    justify-content: left;
+  }
